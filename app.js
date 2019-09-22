@@ -1,12 +1,13 @@
-const express = require('express');
-const http = require('http');
-const path = require('path');
+var express = require('express');
+var app = express();
 
-let app = express();
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(__dirname + '/'));
 
-const port = process.env.PORT || '8080';
-app.set('port', port);
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('build'));
+    app.get('*', (req, res) => {
+        res.sendFile(path.join('build', 'index.html'));
+    });
+}
 
-const server = http.createServer(app);
-server.listen(port, () => console.log(`Running on localhost:${port}`));
+app.listen(process.env.PORT || 8080);
