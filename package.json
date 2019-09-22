@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "app.js",
+  "homepage": "https://game-assessment-frontend.herokuapp.com/",
   "dependencies": {
     "express": "^4.17.1",
     "react": "^16.9.0",
