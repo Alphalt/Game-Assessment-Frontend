@@ -5,15 +5,17 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <div className="Title-Container">
-        <h2 className="Title">GAME OF DRONES</h2>
-        <div className="Button-Container">
-          <Link to="/start-game" className="Button">Let's Play!</Link>
+    <div className="app">
+      <div className="container">
+        <div className="title">
+          <h2>GAME OF DRONES</h2>
         </div>
-      </div>
-      <div className="Container">
-        <img className="Principal-Image" src={principalImage} alt="principalImage" />
+
+        <div className="main">
+          <img className="Principal-Image" src={principalImage} alt="principalImage" />
+        </div>
+        
+        <Link to="/start-game" className="blueButton">Let's Play!</Link>
       </div>
     </div>
   );

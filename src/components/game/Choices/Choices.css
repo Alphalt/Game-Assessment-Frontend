@@ -1,0 +1,27 @@
+.Choices-Container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    margin-bottom: 40px;
+}
+
+.rock {
+    width: 100%;
+    background-color: #ffde53;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.paper {
+    width: 100%;
+    background-color: #7fcfda;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.scissors {
+    width: 100%;
+    background-color: #f15481;
+    margin-bottom: 10px;
+    cursor: pointer;
+}

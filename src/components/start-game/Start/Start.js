@@ -42,16 +42,16 @@ const Start = () => {
     return (
         <div className="Start">
             {toBoard ? <Redirect to='/board' /> : null}
-            <div className="Start-Title-Container">
-                <h2 className="Start-Title">GAME OF DRONES</h2>
+            <div className="title">
+                <h2>GAME OF DRONES</h2>
             </div>
 
-            <div className="row">
-                <div className="column">
-                    <h2>Enter Players Names</h2>
-                    <img className="PaperImage" src={paperImage} alt="papperImage" />
+            <div className="mainFlex">
+                <div className="imageColumn">
+                    <img src={paperImage} alt="papperImage" />
                 </div>
-                <div className="column">
+                <div className="PlayersNamesColumn">
+                    <h2>Enter Players Names</h2>
                     <PlayersForm startGame={startGame} />
                 </div>
             </div>

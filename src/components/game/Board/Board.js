@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Board.css';
 import Choices from '../Choices/Choices';
 import axios from 'axios';
 import { Redirect } from 'react-router-dom';
@@ -75,32 +76,30 @@ const Board = () => {
     return (
         <div className="Board">
             {finish ? <Redirect to='/finish-game' /> : null}
-            <div className="Start-Title-Container">
-                <h2 className="Start-Title">GAME OF DRONES</h2>
+            <div className="title">
+                <h2>GAME OF DRONES</h2>
             </div>
 
-            <div className="row">
-                <div className="column">
-                    <div className="Game-Status">
-                        <h4>Round {roundCounter}</h4>
-                        <h4>{playerName}</h4>
-                        {
-                            (() => {
-                                if (playerIdentifier === 1) {
-                                    let gamesWinsOne = localStorage.getItem('gamesWinsOne');
-                                    return <p>Won games {gamesWinsOne}</p>
-                                }
+            <div className="main">
+                <div className="board">
+                    <h4>Round {roundCounter}</h4>
+                    <h4>{playerName}</h4>
+                    {
+                        (() => {
+                            if (playerIdentifier === 1) {
+                                let gamesWinsOne = localStorage.getItem('gamesWinsOne');
+                                return <p>Won games {gamesWinsOne}</p>
+                            }
 
-                                if (playerIdentifier === 2) {
-                                    let gamesWinsTwo = localStorage.getItem('gamesWinsTwo');
-                                    return <p>Won games {gamesWinsTwo}</p>
-                                }
-                            })()
-                        }
-                    </div>
-                    <div className="Choices-Container">
-                        <Choices setRoundChoice={setRoundChoice} />
-                    </div>
+                            if (playerIdentifier === 2) {
+                                let gamesWinsTwo = localStorage.getItem('gamesWinsTwo');
+                                return <p>Won games {gamesWinsTwo}</p>
+                            }
+                        })()
+                    }
+                </div>
+                <div className="Choices-Container">
+                    <Choices setRoundChoice={setRoundChoice} />
                 </div>
             </div>
         </div>

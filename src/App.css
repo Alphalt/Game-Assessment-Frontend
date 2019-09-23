@@ -1,40 +1,41 @@
-.App {
-  align-items: center;
-  background-color: #282c34;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  background-color: #214478;
+  font-family: Verdana,sans-serif;
+  color: #ffffff;
 }
 
-.Title-Container {
-  padding: 30px 80px 50px 80px;
-  margin-left: 35%;
-  margin-top: auto;
-}
-
-.Title {
-  margin-bottom: auto;
-}
-
-.Button-Container {
-  padding: 30px 80px 50px 80px;
-  margin-top: auto;
-}
-
-.Container{
-  align-content: center;
-  margin-left: 25%;
-  height: 20%;
-}
-
-.Button {
-  background-color: #F2ECEB;
-  border: none;
-  color: black;
-  padding: 15px 32px;
+.app {
   text-align: center;
+}
+
+.container{
+  text-align: center;
+  
+}
+
+.title {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.main {
+  text-align: center;
+}
+
+.blueButton {
+  border: none;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #002255;
+  padding: 10px 20px 10px 20px;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
+  width: 300px;
+}
+
+.blueButton:hover {
+  background: #2E3655;
+  text-decoration: none;
 }

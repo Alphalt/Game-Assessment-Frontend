@@ -1,0 +1,62 @@
+.playersNamesform {
+    text-align: left;
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 300px;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+    background: transparent;
+    color: #ffffff;
+	margin-bottom: 10px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 45px;
+}
+
+/*Styling Selectbox*/
+select {
+    background-color:#3498DB;
+    background-repeat:no-repeat;
+    background-position: right 10px top 15px;
+    background-size: 16px 16px;
+    color:white;
+    padding:12px;
+    width:auto;
+    font-family:arial;
+    font-size:20px;
+    color:#fff;
+    text-align:center;
+    text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-radius:3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-border-radius:3px;
+    -webkit-appearance: none;
+    border:0;
+    outline:0;
+    width: 300px;
+    -webkit-transition:0.3s ease all;
+         -moz-transition:0.3s ease all;
+          -ms-transition:0.3s ease all;
+           -o-transition:0.3s ease all;
+              transition:0.3s ease all;
+  }
+  
+  #blue {
+    background-color:#3498DB;
+  }
+  
+  #blue:hover {
+    background-color:#2980B9;
+  }
+  
+  select:focus, select:active {
+    border:0;
+    outline:0;
+  }

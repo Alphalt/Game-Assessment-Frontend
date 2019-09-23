@@ -1,15 +1,21 @@
-* {
-    box-sizing: border-box;
+.Start {
+    margin: auto;
+    max-width: 900px;
+}
+
+.mainFlex {
+    display: flex;
 }
 
 .column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px;
+    width: 100%;
 }
 
-.row:after {
-    display: table;
-    clear: both;
-}
+.imageColumn {
+    flex: 1;
+    /* Grow to rest of container */
+  }
+
+.PlayersNamesColumn {
+    width: 300px;
+  }

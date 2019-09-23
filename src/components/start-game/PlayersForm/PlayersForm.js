@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './PlayersForm.css';
 
 const PlayersForm = props => {
 
@@ -32,7 +33,7 @@ const PlayersForm = props => {
 
 
     return (
-        <div className="Players-Form">
+        <div className="playersNamesform">
             <form
                 onSubmit={event => {
                     event.preventDefault()
@@ -42,16 +43,18 @@ const PlayersForm = props => {
                     setFormValues(initialFormState)
                 }}
             >
-                <input name="playerOne" placeholder="Player 1 Name" onChange={handleInputChangePlayerOne} />
-                <input name="playerTwo" placeholder="Player 2 Name" onChange={handleInputChangePlayerTwo} />
-                <label>Number of Rounds</label>
-                <select name="select" onChange={handleInputChangeRounds}>
-                    <option value="">Select</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <button type="submit">Start</button>
+                <input type="text" name="playerOne" placeholder="Player 1 Name" onChange={handleInputChangePlayerOne} />
+                <input type="text" name="playerTwo" placeholder="Player 2 Name" onChange={handleInputChangePlayerTwo} />
+                <br/>
+                <label>Select number of Rounds</label><br/>
+                    <select id="blue" name="select" onChange={handleInputChangeRounds}>
+                        <option value="">Number of Rounds...</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                <br/>
+                <button className="blueButton" type="submit">Start</button>
             </form>
         </div>
     )
