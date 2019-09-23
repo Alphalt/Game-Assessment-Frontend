@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Choices from '../Choices/Choices';
 import axios from 'axios';
+import { Redirect } from 'react-router-dom';
 
 const Board = () => {
 
@@ -73,6 +74,7 @@ const Board = () => {
 
     return (
         <div className="Board">
+            {finish ? <Redirect to='/finish-game' /> : null}
             <div className="Start-Title-Container">
                 <h2 className="Start-Title">GAME OF DRONES</h2>
             </div>
