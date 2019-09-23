@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Link } from 'react-router-dom'
+import principalImage from './images/1-GameOfDrones.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Title-Container">
+        <h2 className="Title">GAME OF DRONES</h2>
+        <div className="Button-Container">
+          <Link to="/start-game" className="Button">Let's Play!</Link>
+        </div>
+      </div>
+      <div className="Container">
+        <img className="Principal-Image" src={principalImage} alt="principalImage" />
+      </div>
     </div>
   );
 }
