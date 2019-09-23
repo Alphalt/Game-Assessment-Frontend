@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import ballImage from '../../../images/3-Ball.png';
-import loseBallImage from '../../../images/3-LoseBall.png';
-import winBallImage from '../../../images/3-WinBall.png';
 import Choices from '../Choices/Choices';
 import axios from 'axios';
 
